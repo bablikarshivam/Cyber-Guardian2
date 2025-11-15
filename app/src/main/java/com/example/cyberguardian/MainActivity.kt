@@ -77,7 +77,7 @@ fun AppTopBar(showAvatar: Boolean) {
         actions = {
             if (showAvatar) {
                 Image(
-                    painter = painterResource(id = R.drawable.cyber_guardian_logo),
+                    painter = painterResource(id = R.drawable.new_profile_logo),
                     contentDescription = "Avatar",
                     modifier = Modifier
                         .size(40.dp)
@@ -183,7 +183,7 @@ fun HomeScreen(onOpenScanner: () -> Unit, onOpenAwareness: () -> Unit, onOpenPhi
                         Spacer(modifier = Modifier.height(14.dp))
                         Text("Activity Snapshot", fontWeight = FontWeight.SemiBold, modifier = Modifier.padding(bottom = 8.dp))
                         Column {
-                            SnapshotRow("App Scanned", "18", R.drawable.cyber_guardian_logo)
+                            SnapshotRow("App Scanned", "18", R.drawable.mobile_app_scanner_logo)
                             SnapshotRow("Threats blocked", "6", R.drawable.threats_blocked_logo)
                             SnapshotRow("New Awareness Tips", "5", R.drawable.new_awareness_tips_logo)
                             SnapshotRow("SOS Alerts", "1", R.drawable.sos_alert_logo)
@@ -195,7 +195,7 @@ fun HomeScreen(onOpenScanner: () -> Unit, onOpenAwareness: () -> Unit, onOpenPhi
                 Row(modifier = Modifier.fillMaxWidth()) {
                     QuickActionCard("Phishing Links", icon = { Image(painter = painterResource(id = R.drawable.phishing_links_logo), contentDescription = "Phishing Links", modifier = Modifier.size(48.dp)) }, onClick = onOpenPhishing, modifier = Modifier.weight(1f))
                     Spacer(modifier = Modifier.width(10.dp))
-                    QuickActionCard("Mobile App Scanner", icon = { Image(painter = painterResource(id = R.drawable.cyber_guardian_logo), contentDescription = "Mobile App Scanner", modifier = Modifier.size(48.dp)) }, onClick = onOpenScanner, modifier = Modifier.weight(1f))
+                    QuickActionCard("Mobile App Scanner", icon = { Image(painter = painterResource(id = R.drawable.mobile_app_scanner_logo), contentDescription = "Mobile App Scanner", modifier = Modifier.size(48.dp)) }, onClick = onOpenScanner, modifier = Modifier.weight(1f))
                 }
                 Spacer(modifier = Modifier.height(10.dp))
                 Row(modifier = Modifier.fillMaxWidth()) {
